@@ -13,7 +13,7 @@ def check_if_normal(columns, csv_data):
 
 
 def check_if_crime_rate_increased(columns, csv_data):
-    return stats.ttest_ind(*[csv_data[column] for column in columns]).pvalue
+    return stats.ttest_rel(*[csv_data[column] for column in columns], alternative='less').pvalue
 
 
 def calculate_correlation(columns, csv_data):
