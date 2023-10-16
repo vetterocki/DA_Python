@@ -28,6 +28,8 @@ def process_dataframe(dataframe: pd.DataFrame):
 
 
 data = pd.read_csv("lab3\merc.csv")
+print("1. Вивести інформацію про набір даних, основні статистичні характеристики.",
+      data.describe(), sep="\n")
 result = dataframe_copy(data)
 print("""
 2. За допомогою зрізів зробити копію частини набору даних і зберегти до нового об’єкту DataFrame. 
