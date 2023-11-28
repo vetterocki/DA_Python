@@ -27,7 +27,7 @@ def process_dataframe(dataframe: pd.DataFrame):
     print(dataframe)
 
 
-data = pd.read_csv("lab3\merc.csv")
+data = pd.read_csv("merc.csv")
 print("1. Вивести інформацію про набір даних, основні статистичні характеристики.",
       data.describe(), sep="\n")
 result = dataframe_copy(data)
